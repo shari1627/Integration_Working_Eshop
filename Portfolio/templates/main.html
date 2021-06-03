@@ -1,0 +1,27 @@
+
+{% extends "layout.html"%}
+{% load static %}
+
+
+{% block body %}
+     <h1>Photography</h1>
+     <H2>IMAGE SHORT BY DREAMER STUDIO</H2>
+     <hr/>  
+     
+     {% for results in Categorie %}
+     <a href="{% url 'image' %}?category={{results.id}}"> 
+    <div class="image">
+    <img class="image__img" src="{{results.image.url}}" height="150" width="160" alt="{{results.image.url}}">
+    <div class="image__overlay">
+        <div class="image__title">
+            {{results.imgtitle}} </div>
+        <div class="image__description">{{results.imgdesc}}</div>
+    </div>   
+    </div>
+    </div>
+    
+    
+    </a> 
+  {% endfor %}
+   
+{% endblock %}

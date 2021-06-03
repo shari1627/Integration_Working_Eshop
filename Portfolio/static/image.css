@@ -1,0 +1,136 @@
+body h1{
+    text-align: center;
+    
+    color: transparent;
+    background-image: url("back1.jpg");
+    -webkit-background-clip: text;
+    background-size: cover;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    font-size: 95px;
+    position:relative;
+    z-index:3;
+}
+
+/* .gallery img{
+    width:380px;
+    height:400px;
+} */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(8, 1fr);
+    grid-template-rows:repeat(14, 5vw);
+    grid-gap: 10px;
+    margin-left:70px;
+    margin-right: 70px;
+     
+ }
+ .gallery_img{
+    display:block;    
+    transition:1s;
+    padding:1px;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover;
+    object-position: 100%;
+     */
+}
+ .gallery_item1{
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 4;
+
+}
+.gallery_item2{
+    grid-column-start: 3;
+grid-column-end: 5;
+grid-row-start: 1;
+grid-row-end: 4;
+}
+.gallery_item3{
+    grid-column-start: 5;
+grid-column-end: 9;
+grid-row-start: 1;
+grid-row-end: 6;
+}
+.gallery_item4{
+    grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 3;
+grid-row-end: 6;
+}
+.gallery_item4{
+    grid-column-start: 1;
+grid-column-end: 5;
+grid-row-start: 4;
+grid-row-end: 8;
+}
+.gallery_item5{
+    grid-column-start: 5;
+grid-column-end: 7;
+grid-row-start: 6;
+grid-row-end: 8;
+}
+.gallery_item6{
+    grid-column-start: 7;
+grid-column-end: 9;
+grid-row-start: 6;
+grid-row-end: 8;
+}
+.gallery_item7{
+    grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 8;
+grid-row-end: 14;
+}
+.gallery_item8{
+    grid-column-start: 4;
+grid-column-end: 7;
+grid-row-start: 8;
+grid-row-end: 12;
+}
+.gallery_item9{
+    grid-column-start: 4;
+grid-column-end: 7;
+grid-row-start: 12;
+grid-row-end: 17;
+}
+.gallery_item10{
+    grid-column-start: 7;
+grid-column-end: 9;
+grid-row-start: 12;
+grid-row-end: 17;
+}
+.gallery_item11{
+    grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 14;
+grid-row-end: 20;
+}
+.gallery_item12{
+    grid-column-start: 7;
+grid-column-end: 9;
+grid-row-start: 8;
+grid-row-end: 12;
+}
+.gallery_item13{
+    grid-column-start: 4;
+grid-column-end: 7;
+grid-row-start: 17;
+grid-row-end: 18;
+}
+.gallery_item14{
+    grid-column-start: 7;
+grid-column-end: 9;
+grid-row-start: 17;
+grid-row-end: 18;
+}   
+  
+
+.gallery img:hover{
+    filter:grayscale(100%);
+    transform:scale(1.1);
+ }

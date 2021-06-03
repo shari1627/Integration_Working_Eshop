@@ -1,0 +1,337 @@
+{% extends "layout2.html"%}
+{% load static %}
+
+{% block body %}
+<h1>VIDEOGRAPHY</h1>
+
+  <div class="container">
+    <div class="screen">
+    {% for i in video %}
+    
+    {% if forloop.counter == 1 %}
+    <div class="v1">
+    <div class="video1">
+      <video id="v1"src="{{i.video.url}}"  preload  controls  ></video>
+      <p>{{i.caption}}</p>
+    </div>
+    </div>
+    <div class="v2">
+    {% elif forloop.counter == 2 %}
+    <div class="video1">
+      <video id="v2"src="{{i.video.url}}"  preload  controls  ></video>
+      <p>{{i.caption}}</p>
+    </div>
+    </div>
+    {% elif forloop.counter == 3 %}
+    <div class="v3">
+    <div class="video1">
+      <video id="v3"src="{{i.video.url}}"  preload  controls  ></video>
+      <p>{{i.caption}}</p>
+    </div>
+    </div>
+    {% elif forloop.counter == 4 %}
+    <div class="v4">
+    <div class="video1">
+      <video id="v4"src="{{i.video.url}}"  preload  controls  ></video>
+      <p>{{i.caption}}</p>
+    </div>
+    </div>
+    {% elif forloop.counter == 5 %}
+    <div class="v5">
+    <div class="video1">
+      <video id="v5"src="{{i.video.url}}"  preload  controls  ></video>
+      <p>{{i.caption}}</p>
+    </div>
+    </div>
+     {% elif forloop.counter == 6 %}
+    <div class="v6">
+    <div class="video1">
+      <video id="v6" src="{{i.video.url}}"  preload  controls  ></video>
+      <p>{{i.caption}}</p>
+    </div>
+    </div> 
+    
+    
+    {% elif forloop.counter == 7 %}
+    <div class="v7">
+    <div class="video1">
+      <video id="v7" src="{{i.video.url}}"  preload  controls  ></video>
+      <p>{{i.caption}}</p>
+    </div>
+    </div> 
+    {% endif %}
+    {% endfor %}
+    </div>
+    
+    <div class="scroll">
+    {% for i in video %}
+    
+    {% if forloop.counter == 1 %}
+    <a onclick="display1()">
+    <div id="video1a">
+      <video class="clip" src="{{i.video.url}}"></video>
+    </div>
+    </a>
+    
+      
+    {% elif forloop.counter == 2 %}
+    <a onclick="display2()">
+    <div id="video2">
+      <video  class="clip"  >
+        <source src="{{i.video.url}}">  </source>
+       
+      </video>
+    </div>  
+    </a>
+      {% elif forloop.counter == 3 %}
+      <a onclick="display3()">
+      <div class="video3">
+        <video    >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     </a>
+     {% elif forloop.counter == 4 %}
+     <a onclick="display4()">
+      <div class="video4">
+        <video >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     </a>
+     {% elif forloop.counter == 5 %}
+     <a onclick="display5()">
+      <div class="video5">
+        <video    >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     </a>
+     {% elif forloop.counter == 6 %}
+     <a onclick="display6()">
+      <div class="video6">
+        <video   >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     </a>
+     {% elif forloop.counter == 7 %}
+     <a onclick="display7()">
+      <div class="video7">
+        <video  preload loop   >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     </a>
+     {% elif forloop.counter == 8 %}
+      <div class="video8">
+        <video  preload loop   >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     {% elif forloop.counter == 9 %}
+      <div class="video9">
+        <video  preload loop  >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     {% elif forloop.counter == 10 %}
+      <div class="video10">
+        <video  preload loop   >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     {% elif forloop.counter == 11 %}
+      <div class="video11">
+        <video  preload loop  >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     {% elif forloop.counter == 12 %}
+      <div class="video12">
+        <video  preload loop  >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     {% elif forloop.counter == 13 %}
+      <div class="video13">
+        <video  preload loop  >
+          <source src="{{i.video.url}}">  </source>
+        </video>  
+      
+     </div>
+     </div>
+
+    {% endif %}
+    {% endfor %}
+  </div>
+<script>
+ 
+  function display1()
+  
+  {
+     if(document.querySelector('.v1').style.display="none"){
+      document.querySelector('.v1').style.display="block";
+      document.querySelector('.v2').style.display="none";
+      document.querySelector('.v3').style.display="none";
+      document.querySelector('.v4').style.display="none";
+      document.querySelector('.v5').style.display="none";
+      document.querySelector('.v6').style.display="none";
+      document.querySelector('.v7').style.display="none";
+      v1.play();
+      v2.pause();
+      v3.pause(); 
+      v4.pause();
+      v5.pause(); 
+      v6.pause();
+      v7.pause(); 
+
+     }   
+    
+    }
+  function display2()
+  
+  {
+     if(document.querySelector('.v2').style.display="none"){
+      document.querySelector('.v1').style.display="none";
+      document.querySelector('.v2').style.display="block";
+      document.querySelector('.v3').style.display="none";
+      document.querySelector('.v4').style.display="none";
+      document.querySelector('.v5').style.display="none";
+      document.querySelector('.v6').style.display="none";
+      document.querySelector('.v7').style.display="none";
+      v1.pause();
+      v2.play();
+      v3.pause(); 
+      v4.pause();
+      v5.pause(); 
+      v6.pause();
+      v7.pause(); 
+
+     }   
+    
+    }
+    function display3()
+  
+  {
+     if(document.querySelector('.v3').style.display="none"){
+      document.querySelector('.v1').style.display="none";
+      document.querySelector('.v2').style.display="none";
+      document.querySelector('.v3').style.display="block";
+      document.querySelector('.v4').style.display="none";
+      document.querySelector('.v5').style.display="none";
+      document.querySelector('.v6').style.display="none";
+      document.querySelector('.v7').style.display="none";
+      v1.pause();
+      v2.pause();
+      v3.play(); 
+      v4.pause();
+      v5.pause(); 
+      v6.pause();
+      v7.pause(); 
+
+     }   
+    
+    }
+    function display4()
+  
+  {
+     if(document.querySelector('.v4').style.display="none"){
+      document.querySelector('.v1').style.display="none";
+      document.querySelector('.v2').style.display="none";
+      document.querySelector('.v3').style.display="none";
+      document.querySelector('.v4').style.display="block";
+      document.querySelector('.v5').style.display="none";
+      document.querySelector('.v6').style.display="none";
+      document.querySelector('.v7').style.display="none";
+      v1.pause();
+      v2.pause();
+      v3.pause(); 
+      v4.play();
+      v5.pause(); 
+      v6.pause();
+      v7.pause(); 
+
+     }   
+    
+    }
+    function display5()
+  
+  {
+     if(document.querySelector('.v5').style.display="none"){
+      document.querySelector('.v1').style.display="none";
+      document.querySelector('.v2').style.display="none";
+      document.querySelector('.v3').style.display="none";
+      document.querySelector('.v4').style.display="none";
+      document.querySelector('.v5').style.display="block";
+      document.querySelector('.v6').style.display="none";
+      document.querySelector('.v7').style.display="none";
+      v1.pause();
+      v2.pause();
+      v3.pause(); 
+      v4.pause();
+      v5.play(); 
+      v6.pause();
+      v7.pause(); 
+
+     }   
+    
+    }
+    function display6()
+  
+  {
+     if(document.querySelector('.v6').style.display="none"){
+      document.querySelector('.v1').style.display="none";
+      document.querySelector('.v2').style.display="none";
+      document.querySelector('.v3').style.display="none";
+      document.querySelector('.v4').style.display="none";
+      document.querySelector('.v5').style.display="none";
+      document.querySelector('.v6').style.display="block";
+      document.querySelector('.v7').style.display="none";
+      v1.pause();
+      v2.pause();
+      v3.pause(); 
+      v4.pause();
+      v5.pause(); 
+      v6.play();
+      v7.pause(); 
+
+     }   
+    
+    }
+    function display7()
+  
+  {
+     if(document.querySelector('.v6').style.display="none"){
+      document.querySelector('.v1').style.display="none";
+      document.querySelector('.v2').style.display="none";
+      document.querySelector('.v3').style.display="none";
+      document.querySelector('.v4').style.display="none";
+      document.querySelector('.v5').style.display="none";
+      document.querySelector('.v6').style.display="none";
+      document.querySelector('.v7').style.display="block";
+      v1.pause();
+      v2.pause();
+      v3.pause(); 
+      v4.pause();
+      v5.pause(); 
+      v6.pause();
+      v7.play(); 
+
+     }   
+    
+    } 
+</script>    
+
+   
+{% endblock %}
