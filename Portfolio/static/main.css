@@ -114,3 +114,9 @@ body h2 {
     margin-left: 55px;
     border-radius: 10px;
 }
+
+body #flower {
+    position: relative;
+    margin-top: -20px;
+    margin-left: 50px;
+}

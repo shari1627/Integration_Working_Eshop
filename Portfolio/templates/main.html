@@ -1,6 +1,7 @@
  {% extends "layout.html"%} {% load static %} {% block body %}
 <h1>PHOTOGRAPHY</h1>
 <H2>IMAGE SHORT BY DREAMER STUDIO</H2>
+<img id="flower" src={% static 'fb.png'%} width="960" height="530">
 <hr/> {% for results in Categorie %}
 <a href="{% url 'image' %}?category={{results.id}}">
     <div class="image">
