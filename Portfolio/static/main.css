@@ -18,7 +18,7 @@ body h1 {
     opacity: 2;
     filter: contrast(120%);
     filter: brightness(120%);
-    margin-bottom: 120px;
+    margin-bottom: 160px;
 }
 
 body h2 {
@@ -129,14 +129,14 @@ body h2 {
 
 body #flower {
     position: absolute;
-    margin-top: -250px;
+    margin-top: -295px;
     margin-left: 864px;
     z-index: -1;
 }
 
 body #f1 {
     position: absolute;
-    margin-top: -550px;
+    margin-top: -590px;
     margin-left: 20px;
     z-index: -1;
     transform: rotate(30deg);
@@ -145,7 +145,7 @@ body #f1 {
 
 body #f2 {
     position: absolute;
-    margin-top: -560px;
+    margin-top: -600px;
     margin-left: 1030px;
     z-index: -1;
     transform: rotate(-10deg);
@@ -155,7 +155,7 @@ body #f2 {
 
 body #f3 {
     position: absolute;
-    margin-top: -260px;
+    margin-top: -300px;
     margin-left: -3px;
     z-index: -1;
     transform: rotate(-360deg);

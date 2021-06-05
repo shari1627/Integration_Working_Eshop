@@ -3,7 +3,6 @@
 
 <div class="container">
     <div class="screen">
-<<<<<<< HEAD
         {% for i in video %} {% if forloop.counter == 1 %}
         <div class="v1">
             <div class="video1">
@@ -55,79 +54,21 @@
                 <p>{{i.caption}}</p>
             </div>
         </div>
+        {% elif forloop.counter == 8 %}
+        <div class="v8">
+            <div class="video1">
+                <video id="v8" src="{{i.video.url}}" preload controls poster="{{i.Poster.url}}"></video>
+                <p>{{i.caption}}</p>
+            </div>
+        </div>
         {% endif %} {% endfor %}
-=======
-    {% for i in video %}
-    
-    {% if forloop.counter == 1 %}
-    <div class="v1">
-    <div class="video1">
-      <video id="v1"src="{{i.video.url}}"  preload  controls  ></video>
-      <p>{{i.caption}}</p>
-    </div>
-    </div>
-    <div class="v2">
-    {% elif forloop.counter == 2 %}
-    <div class="video1">
-      <video id="v2"src="{{i.video.url}}"  preload  controls  ></video>
-      <p>{{i.caption}}</p>
-    </div>
-    </div>
-    {% elif forloop.counter == 3 %}
-    <div class="v3">
-    <div class="video1">
-      <video id="v3"src="{{i.video.url}}"  preload  controls  ></video>
-      <p>{{i.caption}}</p>
-    </div>
-    </div>
-    {% elif forloop.counter == 4 %}
-    <div class="v4">
-    <div class="video1">
-      <video id="v4"src="{{i.video.url}}"  preload  controls  ></video>
-      <p>{{i.caption}}</p>
-    </div>
-    </div>
-    {% elif forloop.counter == 5 %}
-    <div class="v5">
-    <div class="video1">
-      <video id="v5"src="{{i.video.url}}"  preload  controls  ></video>
-      <p>{{i.caption}}</p>
-    </div>
-    </div>
-     {% elif forloop.counter == 6 %}
-    <div class="v6">
-    <div class="video1">
-      <video id="v6" src="{{i.video.url}}"  preload  controls  ></video>
-      <p>{{i.caption}}</p>
-    </div>
-    </div> 
-    
-    
-    {% elif forloop.counter == 7 %}
-    <div class="v7">
-    <div class="video1">
-      <video id="v7" src="{{i.video.url}}"  preload  controls  ></video>
-      <p>{{i.caption}}</p>
-    </div>
-    </div>
-    {% elif forloop.counter == 8 %}
-    <div class="v8">
-    <div class="video1">
-      <video id="v8" src="{{i.video.url}}"  preload  controls poster="{{i.Poster.url}}"  ></video>
-      <p>{{i.caption}}</p>
-    </div>
-    </div> 
-    {% endif %}
-    {% endfor %}
->>>>>>> e62462de1b1aff4c8387cb5d1b56d7fb3309f889
     </div>
 
     <div class="scroll">
-<<<<<<< HEAD
         {% for i in video %} {% if forloop.counter == 1 %}
         <a onclick="display1()">
             <div id="video1a">
-                <video class="clip" src="{{i.video.url}}" muted poster="https://source.unsplash.com/random"></video>
+                <video class="clip" src="{{i.video.url}}" muted poster="static/wood.jpj"></video>
             </div>
         </a>
 
@@ -136,22 +77,7 @@
         <a onclick="display2()">
             <div id="video2">
                 <video class="clip" muted>
-=======
-    {% for i in video %}
-    
-    {% if forloop.counter == 1 %}
-    <a onclick="display1()">
-    <div id="video1a">
-      <video class="clip" src="{{i.video.url}}" muted poster="static/wood.jpj"></video>
-    </div>
-    </a>
-    
-      
-    {% elif forloop.counter == 2 %}
-    <a onclick="display2()">
-    <div id="video2">
-      <video  class="clip"  muted>
->>>>>>> e62462de1b1aff4c8387cb5d1b56d7fb3309f889
+
         <source src="{{i.video.url}}">  </source>
        
       </video>
