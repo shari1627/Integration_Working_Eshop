@@ -3,11 +3,11 @@
 }
 
 body h1 {
-    color: rgba(0, 0, 255, 0.178);
-    background-image: url("https://media.giphy.com/media/26AHz7xlRTuEMCPPa/giphy.gif");
+    color: transparent;
+    background-image: url("https://media.giphy.com/media/l0uJcwRwF5tO7LgB5t/giphy.gif");
     -webkit-background-clip: text;
     background-size: cover;
-    margin-top: 200px;
+    margin-top: 150px;
     text-align: center;
     letter-spacing: 10px;
     font-size: 120px;
@@ -15,17 +15,24 @@ body h1 {
     position: relative;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-text-stroke: .6px white;
+    opacity: 2;
+    filter: contrast(120%);
+    filter: brightness(120%);
 }
 
 body h2 {
     color: transparent;
-    background-image: url("https://media.giphy.com/media/3oriNZuNzeTbtJvKs8/giphy.gif");
+    background-image: url("https://media.giphy.com/media/l0uJcwRwF5tO7LgB5t/giphy.gif");
     -webkit-background-clip: text;
+    -webkit-text-stroke: .1px white;
     font-size: 18px;
     text-align: center;
-    margin-top: 0px;
-    font-family: cursive;
-    margin-bottom: 50px;
+    margin-top: 170px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 120px;
+    opacity: 2;
+    filter: contrast(120%);
+    filter: brightness(220%);
 }
 
 .image {
@@ -122,8 +129,137 @@ body h2 {
 
 body #flower {
     position: absolute;
-    margin-top: -390px;
+    margin-top: -380px;
     margin-left: 110px;
     z-index: -1;
-    opacity: 0.6;
+}
+
+body #f1 {
+    position: absolute;
+    margin-top: -590px;
+    margin-left: 20px;
+    z-index: -1;
+    transform: rotate(20deg);
+    position: absolute;
+}
+
+body #f2 {
+    position: absolute;
+    margin-top: -610px;
+    margin-left: 1030px;
+    z-index: -1;
+    transform: rotate(-10deg);
+    position: absolute;
+    filter: contrast(150%);
+}
+
+body #f3 {
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 10px;
+    z-index: -1;
+    transform: rotate(00deg);
+    position: absolute;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.leaf {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.leaf div {
+    position: absolute;
+    display: block;
+}
+
+.leaf div:nth-child(1) {
+    left: 20%;
+    animation: fall 15s linear infinite;
+    animation-delay: -2s;
+}
+
+.leaf div:nth-child(2) {
+    left: 70%;
+    animation: fall 15s linear infinite;
+    animation-delay: -4s;
+}
+
+.leaf div:nth-child(3) {
+    left: 10%;
+    animation: fall 20s linear infinite;
+    animation-delay: -7s;
+}
+
+.leaf div:nth-child(4) {
+    left: 50%;
+    animation: fall 18s linear infinite;
+    animation-delay: -5s;
+}
+
+.leaf div:nth-child(5) {
+    left: 85%;
+    animation: fall 14s linear infinite;
+    animation-delay: -5s;
+}
+
+.leaf div:nth-child(6) {
+    left: 15%;
+    animation: fall 16s linear infinite;
+    animation-delay: -10s;
+}
+
+.leaf div:nth-child(7) {
+    left: 90%;
+    animation: fall 15s linear infinite;
+    animation-delay: -4s;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+        top: -10%;
+        transform: translateX (20px) rotate(0deg);
+    }
+    20% {
+        opacity: 0.8;
+        transform: translateX (-20px) rotate(45deg);
+    }
+    40% {
+        transform: translateX (-20px) rotate(90deg);
+    }
+    60% {
+        transform: translateX (-20px) rotate(135deg);
+    }
+    80% {
+        transform: translateX (-20px) rotate(180deg);
+    }
+    100% {
+        top: 110%;
+        transform: translateX (-20px) rotate(225deg);
+    }
+}
+
+.leaf1 {
+    transform: rotateX(180deg);
+}
+
+h2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    font-family: 'Courgette', cursive;
+    font-size: 4em;
+    text-align: center;
+    transform: translate;
+    color: #fff;
+    transform: translateY (-50%);
 }
