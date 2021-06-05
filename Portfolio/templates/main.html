@@ -1,5 +1,9 @@
  {% extends "layout.html"%} {% load static %} {% block body %}
 <h1>PHOTOGRAPHY</h1>
+<<<<<<< HEAD
+<H2>IMAGE SHOT BY DREAMER STUDIO</H2>
+<img id="flower" src={% static 'fb.png'%} width="1000" height="580"> {% for results in Categorie %}
+=======
 <H2>IMAGE SHORT BY DREAMER STUDIO</H2>
 <img id="flower" src={% static 'f5.png'%} width="400" height="350">
 <img id="f1" src={% static 'f5.png'%} width="250" height="250">
@@ -57,6 +61,7 @@
     </div>
 </section>
 {% for results in Categorie %}
+>>>>>>> b3ecc1208790c30457616aaed39f572b4aa900ab
 <a href="{% url 'image' %}?category={{results.id}}">
     <div class="image">
         <img class="image__img" src="{{results.image.url}}" height="150" width="160" alt="{{results.image.url}}">
