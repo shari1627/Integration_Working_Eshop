@@ -10,7 +10,7 @@ class Admingallery(admin.ModelAdmin):
     list_display=['category','image']
 
 class AdminVideo(admin.ModelAdmin):
-    list_display=['video','caption']
+    list_display=['video','caption','Poster']
 
 admin.site.register(gallery,Admingallery)
 admin.site.register(Categorie,AdminCategorie)

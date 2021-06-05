@@ -58,6 +58,13 @@
       <video id="v7" src="{{i.video.url}}"  preload  controls  ></video>
       <p>{{i.caption}}</p>
     </div>
+    </div>
+    {% elif forloop.counter == 8 %}
+    <div class="v8">
+    <div class="video1">
+      <video id="v8" src="{{i.video.url}}"  preload  controls poster="{{i.Poster.url}}"  ></video>
+      <p>{{i.caption}}</p>
+    </div>
     </div> 
     {% endif %}
     {% endfor %}
@@ -69,7 +76,7 @@
     {% if forloop.counter == 1 %}
     <a onclick="display1()">
     <div id="video1a">
-      <video class="clip" src="{{i.video.url}}" muted></video>
+      <video class="clip" src="{{i.video.url}}" muted poster="static/wood.jpj"></video>
     </div>
     </a>
     

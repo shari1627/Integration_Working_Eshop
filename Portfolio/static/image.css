@@ -2,9 +2,9 @@ body h1{
     text-align: center;
     
     color: transparent;
-    background-image: url("back1.jpg");
+    background-image: url("backr (2).jpg");
     -webkit-background-clip: text;
-    background-size: cover;
+    background-size:contain;
     margin-top: 120px;
     margin-bottom: 50px;
     margin-left: 30px;
