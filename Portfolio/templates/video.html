@@ -62,7 +62,7 @@
     {% elif forloop.counter == 8 %}
     <div class="v8">
     <div class="video1">
-      <video id="v8" src="{{i.video.url}}"  preload  controls poster="{{i.Poster.url}}"  ></video>
+      <video id="v8" src="{{i.video.url}}"  preload  controls   ></video>
       <p>{{i.caption}}</p>
     </div>
     </div> 
@@ -137,7 +137,7 @@
      </a>
      {% elif forloop.counter == 8 %}
       <div class="video8">
-        <video  preload loop   >
+        <video  preload loop poster="{{i.Poster.url}}"   >
           <source src="{{i.video.url}}">  </source>
         </video>  
       
