@@ -76,7 +76,11 @@
          {% elif forloop.counter == 15 %}     
          <figure class="gallery_item15"> 
           <a href="{{gallery.image.url}}"  data-lightbox="mygallery"><img class="gallery_img"src="{{gallery.image.url}}">
-         </a></figure>          
+         </a></figure>   
+         {% elif forloop.counter == 16 %}     
+         <figure class="gallery_item16"> 
+          <a href="{{gallery.image.url}}"  data-lightbox="mygallery"><img class="gallery_img"src="{{gallery.image.url}}">
+         </a></figure>         
     {% endif %}   
   
   {% endfor %}
