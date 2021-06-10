@@ -1,15 +1,18 @@
 body h1 {
     text-align: center;
-    color: transparent;
-    background-image: url("backr (2).jpg");
-    -webkit-background-clip: text;
-    background-size: contain;
-    margin-top: 120px;
+    margin-top: 105px;
     margin-bottom: 50px;
     margin-left: 30px;
-    font-size: 95px;
-    position: relative;
+    letter-spacing: 18px;
+    font-size: 110px;
+    background-image: url(https://media.giphy.com/media/3oEdv5SY4LBHUBe2o8/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    word-spacing: 2px;
     z-index: 3;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -163,7 +166,7 @@ body h1 {
 
 body #f1 {
     position: absolute;
-    margin-top: -345px;
+    margin-top: -407px;
     z-index: -1;
     transform: rotate(-112deg);
     position: fixed;
@@ -171,7 +174,7 @@ body #f1 {
 
 body #f2 {
     position: absolute;
-    margin-top: -344px;
+    margin-top: -404px;
     z-index: -1;
     transform: rotate(-125deg);
     position: fixed;
