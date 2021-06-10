@@ -32,8 +32,22 @@ def imagedisplay1(request):
     return render(request,'main.html',{'Categorie':resultdisplay1})
     
 def video(request):
-    video=Video.objects.all()
-    return render(request,'video.html',{'video':video})
+    
+    
+    scroll=Video.get_all_videos() 
+    id=request.GET.get('id')
+    if id:
+        video=Video.get_all_videos_by_id(id)
+          
+    else:
+        video=Video.get_all_videos() 
+    data={}
+    data ['video']=video
+    data ['scroll']=scroll        
+
+          
+    return render(request,'video.html',data)
+
   
 def home(request):
     return render(request,'home.html')  
