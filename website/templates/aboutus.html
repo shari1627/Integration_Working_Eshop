@@ -1,0 +1,370 @@
+{% load static %}
+<html>
+
+<head>
+    <title>About us</title>
+</head>
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f173;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        margin-top: 15px;
+        margin-left: -30px;
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+</style>
+
+<body background="{% static 'images/bg.png' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <body>
+        <div class="container-fluid">
+            <div>
+                <ul id="firstthree">
+                    <h4 id="a">
+                        <a href="{% url 'index' %}" style="text-decoration: none;">HOME</a>
+                    </h4>
+                    <h4 id="b">
+                        <div class="dropdown">
+                            <a href="{% url 'portfolio' %}" style="text-decoration: none;width:50px;height:300px;margin-bottom:200px;padding-bottom:100px">PORTFOLIO</a>
+                            <div class="dropdown-content">
+                                <a href="{% url 'portfolio' %}">PHOTOGRAPHY</a>
+                                <a href="{% url 'video' %}">VIDEOGRAPHY</a>
+                            </div>
+                        </div>
+                    </h4>
+                    <h4 id="c">
+                        <a href="#" style="text-decoration: none;">ABOUT US</a>
+                    </h4>
+                </ul>
+            </div>
+            <div>
+                <ul id="logo">
+                    <a href="{% url 'index' %}" style="text-decoration: none;"><img src="{% static '/images/logo.png' %}" width="430" height="430"></a>
+                </ul>
+            </div>
+            <div>
+                <ul id="lastthree">
+                    <h4 id="d">
+                        <a href="{% url 'cart' %}" style="text-decoration: none;">STORE</a>
+                    </h4>
+                    <h4 id="e">
+                        <a href="{% url 'contact' %}" style="text-decoration: none;">CONTACT</a>
+                    </h4>
+                    <h4 id="f">
+                        <a href="#" style="text-decoration: none;">ACCOUNT</a>
+                    </h4>
+                </ul>
+            </div>
+            <!-- Container (About Section) -->
+            <div id="about" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h1> What We Do</h1><br>
+                        <h4>Smile, it’s the melody of your soul.We at Lucky Digital Studio & Gifts just love to create your memories through your beautiful smile. We are your smile and memory creators and our unique memory creating studio is located at Sampangierama
+                            Nagar, Bangalore.We are a creative and hardworking team of Photographers and Videographers and we always strive hard to create your invaluable and long lasting memories which can be cherished all through your life.We are one
+                            of the best Indoor studios in Bangalore and we are known for our creativity. Our quality of photography has been growing exponentially from past few years which resulted in us getting many awards and we have captured some amazing
+                            moments and created the best memories for all our clients.</h4>
+                    </div>
+                    <div class="col-sm-10">
+
+                        <img src="{% static 'images/wed.jpg' %}" class="photo1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid bg-grey">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="{% static 'images/gift.jpg' %}">
+                    </div>
+                    <div class="value">
+                        <h3>
+                            <li>Key Chains</li>
+                            <li>Mugs</li>
+                            <li>T-shirts</li>
+                            <li>Hoodies</li>
+                            <li>Photo Frames of wide range</li>
+                            <li>Customized Phone Cases </li>
+                            <li>Customized Pillows</li>
+                            <li>Customized Clock</li>
+                            <li>Many more Gift items</li>
+                            <li> Wedding photography and Videography</li>
+                            <li> Candid Photography Album design and printing</li>
+                            <li>Pre wedding shoots and post wedding </li>
+                            <li>Baby shoots and kids shoots </li>
+                            <li>Friends and family shoot all indoor and outdoor photography </li>
+                            <br>Any other photography and videography as per the client requirements.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shoot" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h2>Sathish Bevinkatti (Founder & Owner)</h2><br>
+                        <h4>Sathish is a passionate photographer and Videographer. He is creative, passionate. His works says how much is dedicated and his love for photography. He believes Photography is the art of capturing light creating memories for others.He
+                            is Creative has Technical photography skill, Patience and concentration. He adds great Attention to detail in his works.
+                        </h4>
+                        <a href="#" class="get" style="text-decoration: none; ">
+                            <center>Get in Touch</center>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="{% static 'images/owner.jpg' %}" class="photo">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Container (Services Section) -->
+            <div id="services" class="container-fluid text-center">
+                <h5>SERVICES</h5>
+                <br>
+                <div class="row ct-u-paddingBoth20">
+                    <div class="col-xs-6 col-md-4">
+                        <div class="company-icons-white">
+                            <i class="fa fa-camera fa-3x" aria-hidden="true"></i>
+                            <p>
+                                Photoshot
+                            </p>
+                            <p class="company-icons-subtext hidden-xs">
+                                Make your dream photos come true
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="company-icons-white">
+                            <i class="fa fa-gift fa-3x" aria-hidden="true"></i>
+                            <p>
+                                Gift your loved
+                            </p>
+                            <p class="company-icons-subtext hidden-xs">
+                                Amazing Gift items for resonable rates
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="company-icons-white">
+                            <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>
+                            <p>
+                                Add your favorites
+                            </p>
+                            <p class="company-icons-subtext hidden-xs">
+                                Shopping is a happiness
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ct-u-paddingBoth20">
+                    <div class="col-xs-6 col-md-4">
+                        <div class="company-icons-white">
+                            <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
+                            <p>
+                                Your Choice
+                            </p>
+                            <p class="company-icons-subtext hidden-xs">
+                                Customise any according to your choice
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="company-icons-white">
+                            <i class="fa fa-print fa-3x" aria-hidden="true"></i>
+                            <p>
+                                Poloroids/Photos
+                            </p>
+                            <p class="company-icons-subtext hidden-xs">
+                                Print you memories and preserve it
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="company-icons-white">
+                            <i class="fa fa-pencil fa-3x" aria-hidden="true"></i>
+                            <p>
+                                Edit
+                            </p>
+                            <p class="company-icons-subtext hidden-xs">
+                                Edit your old images and give a new look
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+
+</html>
+<style>
+    .body {
+        background-color: beige;
+    }
+    
+    body div ul h4 {
+        display: inline-flex;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        margin-right: 40px;
+        font-size: 17px;
+        text-shadow: .5px .5px;
+        position: relative;
+    }
+    
+    body div ul h4:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: beige;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    
+    body div ul h4:hover:after {
+        width: 100%;
+        left: 0;
+    }
+    
+    body div #firstthree {
+        margin-top: 10px;
+        margin-left: 10px;
+        position: absolute;
+    }
+    
+    body div #logo {
+        align-content: center;
+        margin-left: 325px;
+        margin-top: -195px;
+        size: 5cm
+    }
+    
+    body div #lastthree {
+        margin-left: 700px;
+        margin-top: -235px;
+    }
+    
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(61, 75, 2);
+        font-size: 45;
+        margin-top: 60px;
+    }
+    
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #a73939;
+        font-weight: 600;
+        margin-top: 60px;
+    }
+    
+    h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 21;
+        color: #361a1a;
+        margin-right: -200px;
+    }
+    
+    h4 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 19px;
+        line-height: 1.375em;
+        color: #683409;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    
+    h5 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #550202;
+        font-weight: 600;
+        margin-bottom: -10px;
+    }
+    
+    p {
+        color: rgb(100, 87, 10);
+        font-size: 15px;
+    }
+    
+    a {
+        color: black;
+    }
+    
+    .get {
+        color: rgb(26, 104, 6);
+        font-size: 20;
+    }
+    
+    .photo {
+        padding: 10px 50px;
+        height: 10cm;
+        width: 12cm;
+        margin-left: -20px;
+    }
+    
+    .photo1 {
+        padding: 10px 50px;
+        height: 10cm;
+        width: 12cm;
+        margin-top: -350px;
+        margin-left: 700px;
+    }
+    
+    .value {
+        text-align: center;
+    }
+    
+    .company-icons-white {
+        color: rgb(100, 93, 2);
+        margin-bottom: 50px;
+    }
+    
+    .container-fluid {
+        padding: 60px 50px;
+    }
+    
+    .bg-grey {
+        background-color: #ece2e2;
+    }
+</style>

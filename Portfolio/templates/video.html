@@ -1,14 +1,15 @@
-{% extends "layout2.html"%}
- {% load static %}
-{% block body %}
+{% extends "layout2.html"%} {% load static %} {% block body %}
 <h1>VIDEOGRAPHY</h1>
-
+<img id="flower" src={% static 'f5.png'%} width="400" height="350">
+<img id="f1" src={% static 've1.png'%} width="150" height="200">
+<img id="f2" src={% static 'f4.png'%} width="200" height="250">
+<img id="f3" src={% static 'f5.png'%} width="400" height="350">
 <div class="container">
     <div class="screen">
-        {% for i in video %} 
+        {% for i in video %}
         <div class="v">
             <div class="video1">
-                <video id="v" src="{{i.video.url}}" preload controls ></video>
+                <video id="v" src="{{i.video.url}}" preload controls></video>
                 <p>{{i.caption}}</p>
             </div>
         </div>
@@ -16,12 +17,11 @@
     </div>
 
     <div class="scroll">
-        {% for i in scroll %}
-         {% if forloop.counter == 1 %}
+        {% for i in scroll %} {% if forloop.counter == 1 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div id="video1a">
-                <video class="clip" src="{{i.video.url}}" muted ></video>
-                
+                <video class="clip" src="{{i.video.url}}" muted></video>
+
             </div>
         </a>
 
@@ -29,17 +29,17 @@
         {% elif forloop.counter == 2 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-                <video class="clip" muted >
+                <video class="clip" muted>
                  <source src="{{i.video.url}}">  </source>
        
                 </video>
-                
+
             </div>
         </a>
         {% elif forloop.counter == 3 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-                <video class="clip" >
+                <video class="clip">
                       <source src="{{i.video.url}}">  </source>
                </video>
 
@@ -47,26 +47,26 @@
         </a>
         {% elif forloop.counter == 4 %}
         <a href="{% url 'video' %}?id={{i.id}}">
-            <div class="video9" >
+            <div class="video9">
                 <video class="clip">
           <source src="{{i.video.url}}">  </source>
-        </video>  
-      
-     </div>
-     </a>
-     {% elif forloop.counter == 5 %}
-     <a href="{% url 'video' %}?id={{i.id}}">
-      <div class="video9">
-        <video class="clip" muted  >
+        </video>
+
+            </div>
+        </a>
+        {% elif forloop.counter == 5 %}
+        <a href="{% url 'video' %}?id={{i.id}}">
+            <div class="video9">
+                <video class="clip" muted>
           <source src="{{i.video.url}}" >  </source>
-        </video>  
-      
-     </div>
-     </a>
-     {% elif forloop.counter == 6 %}
-     <a href="{% url 'video' %}?id={{i.id}}">
-      <div class="video9">
-        <video class= "clip"  >
+        </video>
+
+            </div>
+        </a>
+        {% elif forloop.counter == 6 %}
+        <a href="{% url 'video' %}?id={{i.id}}">
+            <div class="video9">
+                <video class="clip">
           <source src="{{i.video.url}}">  </source>
         </video>
 
@@ -75,108 +75,106 @@
         {% elif forloop.counter == 7 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-                <video class="clip" >
-          <source src="{{i.video.url}}">  </source>
-        </video>  
-      
-     </div>
-     </a>
-     {% elif forloop.counter == 8 %}
-     <a href="{% url 'video' %}?id={{i.id}}">
-      <div class="video9">
-        <video  preload loop muted  class="clip" >
+                <video class="clip">
           <source src="{{i.video.url}}">  </source>
         </video>
 
-        </div>
+            </div>
+        </a>
+        {% elif forloop.counter == 8 %}
+        <a href="{% url 'video' %}?id={{i.id}}">
+            <div class="video9">
+                <video preload loop muted class="clip">
+          <source src="{{i.video.url}}">  </source>
+        </video>
+
+            </div>
         </a>
         {% elif forloop.counter == 9 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-            <video preload loop muted  class="clip" >
+                <video preload loop muted class="clip">
           <source src="{{i.video.url}}">  </source>
         </video>
 
-        </div>
+            </div>
 
-    </a>
+        </a>
         {% elif forloop.counter == 10 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-            <video preload loop muted  class= clip>
+                <video preload loop muted class=c lip>
           <source src="{{i.video.url}}">  </source>
         </video>
-        </div>
+            </div>
 
-    </a>
+        </a>
         {% elif forloop.counter == 11 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-            <video preload loop muted  class="clip">
+                <video preload loop muted class="clip">
           <source src="{{i.video.url}}">  </source>
         </video>
-        </div>
+            </div>
 
-    </a>
+        </a>
         {% elif forloop.counter == 12 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-            <video preload loop muted  class="clip">
+                <video preload loop muted class="clip">
           <source src="{{i.video.url}}">  </source>
         </video>
-      </div>
-    </a>
+            </div>
+        </a>
         {% elif forloop.counter == 13 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-            <video preload loop muted  class="clip">
+                <video preload loop muted class="clip">
           <source src="{{i.video.url}}">  </source>
         </video>
-        </div>
+            </div>
 
-    </a>
+        </a>
         {% elif forloop.counter == 14 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-            <video preload loop muted  class="clip">
+                <video preload loop muted class="clip">
           <source src="{{i.video.url}}">  </source>
         </video>
-           </div>
-    </a>
+            </div>
+        </a>
         {% elif forloop.counter == 15 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-            <video preload loop muted class="clip">
+                <video preload loop muted class="clip">
           <source src="{{i.video.url}}">  </source>
         </video>
-       </div>
-    </a>
+            </div>
+        </a>
     </div>
 
-    {% endif %}
-     {% endfor %}
+    {% endif %} {% endfor %}
 </div>
 <script>
     {
 
-    const clip = document.querySelectorAll('.clip');
-    
-    for (let i = 0; i < clip.length; i++) {
-        clip[i].addEventListener('mouseenter', function(e) {
-            clip[i].play()
+        const clip = document.querySelectorAll('.clip');
+
+        for (let i = 0; i < clip.length; i++) {
+            clip[i].addEventListener('mouseenter', function(e) {
+                clip[i].play()
             })
             clip[i].addEventListener('mouseout', function(e) {
                 clip[i].pause()
-                clip[i].currentTime = 0; 
+                clip[i].currentTime = 0;
 
             })
-           
+
 
         }
-       
-           
-    }
 
+
+    }
 </script>
 
 
