@@ -1,4 +1,4 @@
-pip3 install Phonenumbers
+pip install Phonenumbers
 Pip install django-inlinecss
 pip install xhtml2pdf
 pip install django
