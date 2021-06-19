@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '6vp)y*ey*d79l7haa2(gxggo89qp^liccyc16)io9#^@6qvo44'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 SESSION_ENGINE = "django.contrib.sessions.backends.cache" 
 SESSION_ENGINE = "django.contrib.sessions.backends.db"
