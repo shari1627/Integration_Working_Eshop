@@ -1,5 +1,5 @@
-pip install django
-pip install Phonenumbers
-Pip install django-inlinecss
-pip install xhtml2pdf
+Django==3.2.4
+Phonenumbers==8.12.25
+django-inlinecss==0.3.0
+xhtml2pdf==0.2.5
 
