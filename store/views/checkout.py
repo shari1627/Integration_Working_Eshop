@@ -102,6 +102,7 @@ class CheckOut(View):
             email.send()    
             request.session['cart']={}
             return redirect('orders')
+            #return render(request, 'ordersmail.html',context)
             
         else:
             country=geocoder.description_for_number(phonenumbers.parse(customer.phone), "en")
