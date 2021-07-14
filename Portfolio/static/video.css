@@ -1,3 +1,5 @@
+
+
 body h1 {
     color: transparent;
     background-image: url("https://media.giphy.com/media/3oriNZuNzeTbtJvKs8/giphy.gif");
@@ -13,7 +15,9 @@ body h1 {
     -webkit-text-stroke: .6px white;
     opacity: 2;
     filter: contrast(120%);
+    z-index: 10;
     filter: brightness(120%);
+    margin-bottom: 100px;
 }
 
 .container {
@@ -44,8 +48,14 @@ p {
     position: relative;
     margin-top: 470px;
     margin-left: 5px;
-    color: #6666ff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    background-image: url(https://media.giphy.com/media/d5Jcjt2H3nNDoMoJzY/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    word-spacing: 1px;
+    z-index: 3;
+
 }
 
 
@@ -109,6 +119,25 @@ p {
     border: 5px solid orange;
 }
 
-body #f1 {
-    margin-top: -200px;
+body #flower {
+    margin-top: -250px;
+    margin-left: -55px;
+    transform: rotate(0deg);
+    position: absolute;
+    
 }
+body #f1 {
+    margin-top: -240px;
+    margin-left: 1110px;
+    transform: rotate(0deg);
+    position: absolute;
+    
+}
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+    position: fixed;
+    z-index: -1;
+  }
+

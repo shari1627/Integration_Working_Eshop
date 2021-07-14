@@ -1,9 +1,10 @@
 {% extends "layout2.html"%} {% load static %} {% block body %}
 <h1>VIDEOGRAPHY</h1>
-<img id="flower" src={% static 'f5.png'%} width="400" height="350">
-<img id="f1" src={% static 've1.png'%} width="150" height="200">
-<img id="f2" src={% static 'f4.png'%} width="200" height="250">
-<img id="f3" src={% static 'f5.png'%} width="400" height="350">
+<img id="flower" src={% static 'vi1.png'%} width="200" height="200">
+<img id="f1" src={% static 'vi2.png'%} width="200" height="300">
+<img id="f1" src={% static 'vi2.png'%} width="200" height="300">
+
+
 <div class="container">
     <div class="screen">
         {% for i in video %}
@@ -20,7 +21,7 @@
         {% for i in scroll %} {% if forloop.counter == 1 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div id="video1a">
-                <video class="clip" src="{{i.video.url}}" muted></video>
+                <video class="clip" src="{{i.video.url}}" muted poster={{i.poster.url}}></video>
 
             </div>
         </a>
@@ -29,7 +30,7 @@
         {% elif forloop.counter == 2 %}
         <a href="{% url 'video' %}?id={{i.id}}">
             <div class="video9">
-                <video class="clip" muted>
+                <video class="clip" muted> 
                  <source src="{{i.video.url}}">  </source>
        
                 </video>
@@ -154,7 +155,9 @@
     </div>
 
     {% endif %} {% endfor %}
+    
 </div>
+
 <script>
     {
 
@@ -170,11 +173,51 @@
 
             })
 
-
         }
 
-
     }
+    // Some random colors
+const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+
+const numBalls = 50;
+const balls = [];
+
+for (let i = 0; i < numBalls; i++) {
+  let ball = document.createElement("div");
+  ball.classList.add("ball");
+  ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+  ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+  ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+  ball.style.transform = `scale(${Math.random()})`;
+  ball.style.width = `${Math.random()}em`;
+  ball.style.height = ball.style.width;
+  
+  balls.push(ball);
+  document.body.append(ball);
+}
+
+// Keyframes
+balls.forEach((el, i, ra) => {
+  let to = {
+    x: Math.random() * (i % 2 === 0 ? -11 : 11),
+    y: Math.random() * 12
+  };
+
+  let anim = el.animate(
+    [
+      { transform: "translate(0, 0)" },
+      { transform: `translate(${to.x}rem, ${to.y}rem)` }
+    ],
+    {
+      duration: (Math.random() + 1) * 2000, // random duration
+      direction: "alternate",
+      fill: "both",
+      iterations: Infinity,
+      easing: "ease-in-out"
+    }
+  );
+});
+    
 </script>
 
 
