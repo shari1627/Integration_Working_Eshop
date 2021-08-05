@@ -1,13 +1,12 @@
 body {
-  background-color: #cc5577;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23cc5577' width='11' height='11'/%3E%3Crect fill='%23cd5777' x='10' width='11' height='11'/%3E%3Crect fill='%23ce5877' y='10' width='11' height='11'/%3E%3Crect fill='%23cf5a77' x='20' width='11' height='11'/%3E%3Crect fill='%23cf5c78' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23d05e78' y='20' width='11' height='11'/%3E%3Crect fill='%23d15f78' x='30' width='11' height='11'/%3E%3Crect fill='%23d26178' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23d36378' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23d36479' y='30' width='11' height='11'/%3E%3Crect fill='%23d46679' x='40' width='11' height='11'/%3E%3Crect fill='%23d56879' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23d6697a' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23d66b7a' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23d76d7a' y='40' width='11' height='11'/%3E%3Crect fill='%23d86e7b' x='50' width='11' height='11'/%3E%3Crect fill='%23d9707b' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23d9727b' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23da737c' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23db757c' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23db777d' y='50' width='11' height='11'/%3E%3Crect fill='%23dc787d' x='60' width='11' height='11'/%3E%3Crect fill='%23dc7a7e' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23dd7c7e' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23de7d7f' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23de7f7f' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23df8180' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23df8281' x='70' width='11' height='11'/%3E%3Crect fill='%23e08481' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23e18682' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23e18783' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23e28983' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23e28b84' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23e38c85' x='80' width='11' height='11'/%3E%3Crect fill='%23e38e86' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23e48f86' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23e49187' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23e59388' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23e59489' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23e6968a' x='90' width='11' height='11'/%3E%3Crect fill='%23e6988b' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23e7998c' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23e79b8d' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23e79c8e' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23e89e8f' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23e8a090' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23e9a191' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23e9a392' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23eaa593' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23eaa694' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23eaa895' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23eba996' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23ebab97' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23ecad98' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23ecae9a' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23ecb09b' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23edb19c' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23edb39d' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23eeb49f' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23eeb6a0' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
+  width:1300px;
+  height: 1400px;
   font-size: 12px;
   display:flex;
   flex-direction:column;
-  min-height:100%;
+  min-height:500%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body, button, input {
   font-family: 'Montserrat', sans-serif;
@@ -27,8 +26,13 @@ body, button, input {
   min-height:100%;  
 }
 .screen { 
-  background: white;
+  background:white;
   border-radius: 15px;
+  border-style: solid;
+  border-width: thin;
+  position: relative;
+  left: -150px;
+  top: -380px;
 }
 .screen:after {
   content: '';
@@ -39,7 +43,7 @@ body, button, input {
   right: 20px;
   bottom: 0;
   border-radius: 150px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  box-shadow: 20 20px 40px rgba(0, 0, 0, .4);
   z-index: -1;
 }
 
@@ -149,7 +153,7 @@ body, button, input {
 }
 
 .app-form-control::placeholder {
-  color: #e0e0d1;
+  color: #646461;
 }
 
 .app-form-control:focus {
