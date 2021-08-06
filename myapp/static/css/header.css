@@ -1,8 +1,9 @@
     * {
         margin: 0px;
-        padding: 0px;
+        padding: -1px;
         z-index: 0;
         color: black;
+    
     }
     header {
         width: 100%;
